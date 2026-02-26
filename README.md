@@ -28,7 +28,13 @@ Grid lines are color-coded: root notes highlighted, diatonic notes labeled, non-
 
 *Piano roll with D Harmonic Minor scale highlighting, solfege notation, WASAPI audio input.*
 
+## Download
+
+**[Tuner v2.0 — Windows x64](https://github.com/RaduPrusan/Tuner/releases/tag/v2.0)** — standalone executable, no Python required. Extract the zip and run `Tuner.exe`.
+
 ## Requirements
+
+To run from source:
 
 - Windows 10/11
 - Python 3.10+

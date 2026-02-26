@@ -20,4 +20,13 @@ cd /d "%~dp0"
     --product-name=Tuner ^
     --product-version=2.0.0.0 ^
     tuner-2.py
+
+:: Copy libffi DLL required by conda's _ctypes.pyd (not included by Nuitka)
+:: The DLL lives in the base conda env, not the venv itself
+for /f "tokens=*" %%i in ('"python-embedded\Scripts\python.exe" -c "import sys,os; p=os.path.join(sys.base_prefix,'Library','bin','ffi-8.dll'); print(p) if os.path.exists(p) else None"') do (
+    if exist "%%i" (
+        copy /Y "%%i" "tuner-2.dist\ffi-8.dll"
+        echo Copied ffi-8.dll to dist folder
+    )
+)
 pause

@@ -12,6 +12,7 @@ tuner-2.dist/
 tuner-2.build/
 tuner-2.onefile-build/
 *.exe
+*.zip
 
 # IDE
 .vscode/
