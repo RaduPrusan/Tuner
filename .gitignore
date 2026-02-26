@@ -32,4 +32,5 @@ CLAUDE.md
 .claude/
 
 # Design docs (internal)
-docs/
+docs/plans/
+!docs/screenshot.png

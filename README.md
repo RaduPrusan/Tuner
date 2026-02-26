@@ -24,7 +24,9 @@ Grid lines are color-coded: root notes highlighted, diatonic notes labeled, non-
 
 ## Screenshot
 
-*Piano roll with D Harmonic Minor scale highlighting, pitch line in green, solfege + letter notation.*
+![Tuner screenshot — D Harmonic Minor, solfege notation](docs/screenshot.png)
+
+*Piano roll with D Harmonic Minor scale highlighting, solfege notation, WASAPI audio input.*
 
 ## Requirements
 
@@ -66,8 +68,7 @@ python tuner-2.py
 |--------|---------|
 | `install_env.bat` | Create virtual environment and install dependencies |
 | `run.bat` | Launch the tuner (no console window) |
-| `run_debug.bat` | Launch with console output for debugging |
-| `build.bat` | Build standalone Windows executable with Nuitka |
+| `compile_nuitka.bat` | Build standalone Windows executable with Nuitka |
 
 ## Dependencies
 
@@ -131,7 +132,7 @@ All settings are stored in `config.json` and auto-saved on exit. Key sections:
 ## Building a Standalone Executable
 
 ```bash
-build.bat
+compile_nuitka.bat
 ```
 
 Uses Nuitka with `--standalone`, PySide6 plugin, and LTO. The output is a self-contained folder with `Tuner.exe`. Excludes unused Qt modules (QtQml, QtQuick, QtMultimedia, QtWebEngine) for smaller size.
