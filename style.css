@@ -1,0 +1,173 @@
+/* Universal font settings for the entire application */
+* {
+    font-family: "Arial";
+    color: #FFF;
+}
+
+/* Main window background */
+QMainWindow {
+    color: #FFF;
+    background-color: #333333;  /* Light gray background */
+}
+
+
+
+
+QComboBox {
+    font-size: 11px;
+	background-color: black;
+	color: white;
+	border: 1px solid #777777;
+	padding: 2px 10px 2px 4px;
+	border-radius: 0px;
+}
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 20px;
+	/* border-left: 1px solid #777777; */
+	background-color: black;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+QComboBox::down-arrow {
+	image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUgN0wxIDNIOUw1IDdaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==");
+	width: 10px;
+	height: 10px;
+}
+QComboBox QAbstractItemView {
+	background-color: black;
+	color: white;
+	border: 1px solid #777777;
+}
+QPushButton {
+	background-color: black;
+	color: white;
+	border: 1px solid #777777;
+	padding: 5px 10px;
+	border-radius: 0px;
+}
+QPushButton::hover {
+	background-color: #222222;
+}
+QPushButton::pressed {
+	background-color: #444444;
+}
+
+
+
+/* Label styling */
+QLabel {
+    color: #FFF;
+}
+
+
+/* Target by property */
+QLabel[class="pitch-display"] {
+
+}
+
+QLabel[class="freq-display"], QLabel[class="cents-display"] {
+}
+
+QLabel[class="control-label"] {
+    font-size: 10px;
+}
+
+QLabel[class="root-label"], QLabel[class="scale-label"] {
+    font-size: 10px;
+}
+
+
+/* Line edit styling */
+QLineEdit {
+}
+
+QToolTip {
+    background-color: #2a2a2a;    /* Dark background */
+    color: #ffffff;               /* White text */
+    border: 1px solid #444444;    /* Dark gray border */
+    padding: 5px;                 /* Padding inside the tooltip */
+    border-radius: 3px;           /* Rounded corners */
+    font-size: 12px;              /* Text size */
+}
+
+
+/* Style for a horizontal slider handle */
+QSlider::handle:horizontal {
+    background: #D6336C;       /* The color of the handle (for example, a reddish-orange) */
+    border: 1px solid #5c5c5c;  /* A dark gray border */
+    width: 14px;                /* Width of the handle */
+    height: 18px;               /* Height of the handle */
+    margin: -5px 0;             /* Negative margin to make the handle overlap the groove */
+    border-radius: 9px;         /* Rounded handle (half of the width/height for a circle) */
+}
+
+/* Style for the slider groove (the track) */
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #DDDDDD;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    margin: 0 10px;             /* Space for the handle on the ends */
+}
+
+
+
+/* Customize the QCheckBox indicator size */
+QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+/* When unchecked: a white background with a gray border */
+QCheckBox::indicator:unchecked {
+    color: #333;
+    background-color: #FFF;
+    border: 2px solid #000;
+}
+
+/* When checked: a colored background (e.g. green) with a gray border */
+QCheckBox::indicator:checked {
+    color: orange;
+    background-color: #D6336C;
+    border: 2px solid #FFF;
+}
+
+/* Optionally, change the hover state for the indicator */
+QCheckBox::indicator:hover {
+    /*color: #333;*/
+    /*background-color: #777;*/
+    border: 2px solid #D6336C;
+}
+
+/* Change the text color for the checkbox label */
+QCheckBox {
+    color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flatchar {
+
+    color: #F00 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #333333;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.debug_log {
+    font-size: 10px;
+    color: #DDD;
+    background-color: #161616;
+    border: 1px solid #777777;
+    padding: 10px;
+}
+
+

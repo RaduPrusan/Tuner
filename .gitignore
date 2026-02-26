@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+python-embedded/
+
+# Nuitka build output
+tuner-2.dist/
+tuner-2.build/
+tuner-2.onefile-build/
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Backup files
+*.bak
+
+# Claude Code
+CLAUDE.md
+.claude/
+
+# Design docs (internal)
+docs/

@@ -1,0 +1,6 @@
+numpy==1.26.4
+sounddevice==0.5.1
+PySide6==6.8.2
+Nuitka==2.6.4
+ordered-set
+zstandard
