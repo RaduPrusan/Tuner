@@ -143,6 +143,14 @@ compile_nuitka.bat
 
 Uses Nuitka with `--standalone`, PySide6 plugin, and LTO. The output is a self-contained folder with `Tuner.exe`. Excludes unused Qt modules (QtQml, QtQuick, QtMultimedia, QtWebEngine) for smaller size.
 
+## Release integrity
+
+Release binaries are unsigned unless a signed build is explicitly noted on the release page. Verify downloaded archives with the release `SHA256SUMS.txt` checksum file when available.
+
+```powershell
+Get-FileHash .\Tuner.zip -Algorithm SHA256
+```
+
 ## License
 
-All rights reserved.
+MIT. See [LICENSE](LICENSE).
